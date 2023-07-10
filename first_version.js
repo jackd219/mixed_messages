@@ -74,6 +74,11 @@ function hairMessage(string) {
     }
   }
 
-// testing results via console log
 
-console.log(ageRange(78));
+  // function for random food message
+
+  function foodMessage () {
+    let arr = foodRange
+console.log(arr[(Math.floor(Math.random() * arr.length))]);
+  }
+
