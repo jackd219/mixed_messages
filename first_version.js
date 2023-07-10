@@ -82,3 +82,21 @@ function hairMessage(string) {
 console.log(arr[(Math.floor(Math.random() * arr.length))]);
   }
 
+  // Main function to call the three functions
+
+function runFunctions() {
+
+// Prompt the user for input
+const agePrompt = prompt('What is your age? Please enter a number greater than 0: ');
+const hairType = prompt('Is your hair Dark/Normal/Bright? Please specify your type:');
+
+
+// Call the three functions with user-provided parameters
+ageRange(agePrompt);
+randomiseCareer();
+hairMessage(hairType);
+foodMessage();
+}
+
+// Call the main function to start the execution
+runFunctions();
